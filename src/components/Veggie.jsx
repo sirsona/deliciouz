@@ -23,7 +23,7 @@ const Veggie = () => {
       // setVeggie());
     } else {
       const api = await fetch(
-        `https://api.spoonacular.com/recipes/random?apiKey=${process.env.REACT_APP_API_KEY}&number=10`
+        `https://api.spoonacular.com/recipes/random?apiKey=${process.env.NEXT_PUBLIC_REACT_API}&number=10`
       );
       const data = await api.json();
 
